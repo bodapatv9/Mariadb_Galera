@@ -1,0 +1,5 @@
+-- Quick view on Galera node status:
+PAGER grep -E "wsrep_cluster_size|wsrep_cluster_status|wsrep_ready|wsrep_local_state_comment|wsrep_local_state|wsrep_incoming_addresses";
+SHOW STATUS LIKE 'wsrep%';
+NOPAGER;
+
